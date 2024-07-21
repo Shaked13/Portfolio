@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Builder Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js" async defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="background"></div>
+
+        <!-- <button onclick="toggle()">Click</button> -->
+        <div class="sidebar">
+            <div class="container-title">
+                <h1>בונה מסכים</h1>
+                <p>עיצוב ופיתוח ממשקי משתמש אינטראקטיביים</p>
+            </div>
+
+            <label for="elementType">סוג האלמנט</label>
+            <select id="elementType">
+                <option value="h1">h1</option>
+                <option value="h2">h2</option>
+                <option value="h3">h3</option>
+                <option value="p">p</option>
+                <option value="div">div</option>
+                <option value="span">span</option>
+            </select>
+
+            <div class="input-text">
+                <label for="sizew">רוחב</label>
+                <input type="text" id="sizew" placeholder="Width">
+            </div>
+
+            <div class="input-text">
+                <label for="sizeh">אורך</label>
+                <input type="text" id="sizeh" placeholder="Height">
+            </div>
+
+            <div class="input-text">
+                <label for="textArea">טקסט חופשי</label>
+                <textarea id="textArea" placeholder="Write Some Text"></textarea>
+            </div>
+
+            <label for="textColor">צבע טקסט</label>
+            <input type="color" id="textColor" placeholder="Text Color">
+
+            <div class="input-text">
+                <label for="borderWidth">רוחב גבול</label>
+                <input type="number" id="borderWidth" placeholder="Border Width">
+            </div>
+
+            <label for="borderColor">צבע גבול</label>
+            <input type="color" id="borderColor" placeholder="Border Color">
+
+            <div class="input-text">
+                <label for="fontSize">גודל כתב</label>
+                <input type="number" id="fontSize" placeholder="Font Size">
+            </div>
+
+            <label for="fontType">סוג כתב</label>
+            <select id="fontType">
+                <option>Font Type</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Palatino Linotype">Palatino Linotype</option>
+                <option value="Book Antiqua">Book Antiqua</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Arial">Arial</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Arial Black">Arial Black</option>
+                <option value="Impact">Impact</option>
+                <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Lucida Console">Lucida Console</option>
+            </select>
+
+            <label for="borderStyle">גבול סטייל</label>
+            <select id="borderStyle">
+                <option value="none">none</option>
+                <option value="hidden">hidden</option>
+                <option value="dotted">dotted</option>
+                <option value="dashed">dashed</option>
+                <option value="solid">solid</option>
+                <option value="double">double</option>
+                <option value="groove">groove</option>
+                <option value="ridge">ridge</option>
+                <option value="inset">inset</option>
+                <option value="outset">outset</option>
+            </select>
+
+            <button id="add_btn">הוסף</button>
+
+            <!-- <button onclick="saveFunction()" id="save_btn">שמור</button> -->
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

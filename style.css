@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font: normal normal bold 15px/37px Heebo;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FFFFFF;
+    padding: 1em;
+    gap: 30px;
+}
+
+
+.logo {
+    margin-left: 10px
+}
+
+/* nav>.logo {
+    color: red;
+    display: flex;
+    justify-content: flex-start;
+} */
+
+
+#container1 {
+    display: flex;
+    justify-content: center;
+    background-color: #13E8F163;
+    width: 100%;
+    height: 350px;
+    align-items: center;
+    flex-direction: column;
+    direction: rtl;
+}
+
+#container1>h1 {
+    color: #3A3A3A;
+    font: normal normal 900 60px/118px Heebo;
+}
+
+#container1>p {
+    text-align: center;
+    /* width: 700px; */
+    font: normal normal 300 18px/30px Heebo;
+}
+
+.container2 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.container2>img {
+    margin-top: 5px;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #eae8e8;
+    width: 100%;
+    height: 600px;
+}
+
+.containerAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 600px;
+    flex-direction: column;
+}
+
+.imgProfile {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.containerAbout>h1 {
+    font: normal normal 900 35px/52px Heebo;
+}
+
+.containerAbout>p {
+    direction: rtl;
+    font: normal normal normal 14px/29px Heebo;
+}
+
+.btnCV {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    background-color: #1AE0EC;
+    border-radius: 25px;
+    margin-top: 20px;
+    font: normal normal bold 15px/30px Heebo;
+}
+
+#html_projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #F6F6F6;
+    direction: rtl;
+}
+
+#html_projects>h1 {
+    margin-top: 70px;
+    font: normal normal 900 32px/53px Heebo;
+}
+
+#html_projects>p {
+    font: normal normal normal 16px/29px Heebo;
+}
+
+#js_projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: gainsboro;
+    direction: rtl;
+}
+
+#js_projects>h1 {
+    margin-top: 70px;
+    font: normal normal 900 32px/53px Heebo;
+}
+
+#js_projects>p {
+    font: normal normal normal 16px/29px Heebo;
+}
+
+.img {
+    width: 270px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card {
+    width: 270px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 12px gray;
+    margin: 1em;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.card>h3 {
+    margin-top: 20px;
+    font: normal normal medium 50px/34px Heebo;
+}
+
+.card>p {
+    width: 250px;
+    margin-top: 10px;
+    font: normal normal normal 10px/24px Heebo;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 5vw;
+    height: 5vh;
+}
+
+.icons>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btnProjects {
+    width: 125px;
+    height: 30px;
+    background-color: #1AE0EC;
+    border-radius: 25px;
+    border: none;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#html_gallery {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#js_gallery {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.the-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3A3A3A;
+}
+
+.imgContact {
+    width: 900px;
+    height: 500px;
+}
+
+.imgContact>img {
+    width: 100%;
+    height: 100%;
+}
+
+#form {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.form-title>h1 {
+    color: #FFFFFF;
+    font: normal normal 900 26px/53px Heebo;
+}
+
+.form-title>p {
+    width: 300px;
+    font: normal normal normal 14px/29px Heebo;
+    color: #FFFFFF;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.form-item>input {
+    width: 20vw;
+    height: 5vh;
+    border: 2px solid #FFFFFF;
+    margin-left: 10px;
+    background-color: #F6F6F6;
+    border-bottom: 3px solid #1AE0EC;
+}
+
+.form-item>#freetext {
+    width: 20vw;
+    height: 8vh;
+}
+
+
+input[type="submit"] {
+    width: 7vw;
+    height: 4vh;
+    background-color: #1AE0EC;
+    border: #D3E10E;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-left: 210px;
+}
+
+.iconFooter {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1AE0EC;
+    direction: rtl;
+}
+
+.containerIcons {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 15px; */
+}
+
+.containerIcons>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.containerIcons>p {
+    width: 100px;
+    text-align: center;
+    font: normal normal normal 12px/21px Heebo;
+}
+
+a,
+a:visited {
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+}
+
+footer {
+    width: 100%;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>p {
+    padding: 1em;
+}
+
+#hamburger {
+    color: azure;
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+
+@media (max-width:800px) {
+    header {
+        width: 100vw;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav>.nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    #hamburger {
+        display: block;
+        padding: 1em;
+        text-align: right;
+        font-size: 26px;
+        color: #1AE0EC;
+        background-color: #fff;
+        margin-left: 160px;
+    }
+
+    input[type="checkbox"]:checked~nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1 {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: #13E8F163;
+    }
+
+    .container1>h1 {
+        font: normal normal 900 46px/67px Heebo;
+    }
+
+    .container1>p {
+        font: normal normal medium 15px/25px Heebo;
+    }
+
+    #html_gallery {
+        width: 300px;
+    }
+
+    #form>.form-title>h1 {
+        margin-right: 130px;
+    }
+
+    #form>.form-title>p {
+        margin-right: 30px;
+    }
+
+    #form>.form-item>input {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #form>.form-item>input[type="submit"] {
+        margin-top: 15px;
+        width: 200px;
+        margin-left: 15px;
+    }
+
+    .iconFooter>.containerIcons {
+        width: 10px;
+        margin-inline: 27px;
+    }
+
+    .iconFooter>.containerIcons>p {
+        font-size: 7px;
+    }
+}

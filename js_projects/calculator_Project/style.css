@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2828284c;
+}
+
+/* 
+.bg {
+    background-image: url(./images/imgBackground.png);
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.container {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 50px
+}
+
+.calculator {
+    width: 450px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.calculator p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    font-size: xx-large;
+    color: white;
+    background-color: gray;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: large;
+    color: white;
+    background-color: #282828;
+}
+
+.buttons>#eq {
+    color: white;
+    width: 165px;
+    background-color: rgb(6, 153, 6);
+}
+
+.buttons>#ac {
+    color: orangered;
+}
+
+.buttons>#pc {
+    color: rgb(7, 188, 7);
+}
+
+.buttons>#ds {
+    color: rgb(7, 188, 7);
+}
+
+.buttons>#dl {
+    color: rgb(7, 188, 7);
+}
+
+.buttons>#mul {
+    color: rgb(7, 188, 7);
+}
+
+.buttons>#minus {
+    color: rgb(7, 188, 7);
+}
+
+.buttons>#plus {
+    color: rgb(7, 188, 7);
+}
+
+
+@media (max-width: 768px) {
+    .calculator {
+        width: 400px;
+    }
+}

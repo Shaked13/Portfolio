@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, #281EFF, #2DFF8C);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    direction: rtl;
+}
+
+.title>h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font: normal normal normal 160px/215px Satisfy;
+}
+
+.title>h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font: normal normal normal 32px/40px Varela Round;
+}
+
+.title>p {
+    color: #F9F9F9;
+    text-align: center;
+    font: normal normal normal 14px/40px Varela Round;
+    width: 1000px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: center;
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+}
+
+.form-item>label {
+    text-align: right;
+}
+
+.form-item>input {
+    border: 2px solid #FFFFFF;
+    background-color: #F6F6F624;
+    width: 20vw;
+    height: 5vh;
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    background-color: #FFFFFF;
+    width: 10vw;
+    height: 5vh;
+}
+
+@media(max-width:800px) {
+    .container {
+        background-color: 100%;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title>h1 {
+        font: normal normal normal 70px/86px Satisfy;
+    }
+
+    .title>h2 {
+        margin-top: 30px;
+        font: normal normal normal 20px/22px Varela Round;
+    }
+
+    .title>p {
+        margin-top: 20px;
+        width: 100vw;
+        font: normal normal normal 16px/20px Varela Round;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form-item {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-item>label {
+        margin-right: 15px;
+    }
+
+    .form-item>input {
+        width: 80vw;
+        margin-right: 15px;
+    }
+}
