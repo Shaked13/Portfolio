@@ -5,11 +5,11 @@
 }
 
 body {
-    background-color: turquoise;
+    background-color: silver;
 }
 
 .title {
-    width: 500px;
+    width: 100%;
     margin: auto;
     height: 150px;
     display: flex;
@@ -25,26 +25,33 @@ h2 {
     margin-bottom: 10px;
 }
 
-.score {
-    margin-top: 10px;
+p {
+    font-size: large;
 }
 
 .container {
-    /* width: 1500px; */
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    gap: 1rem;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 60%;
     margin: auto;
 }
 
 .card div {
     height: 200px;
+    margin: auto;
 }
 
 .card {
+    height: 200px;
     width: 170px;
     position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .front {
@@ -57,12 +64,22 @@ h2 {
     border: 2px solid black;
     background-color: white;
     transform: rotateY(90deg);
+    margin: auto;
 }
 
 .back {
     background-image: url(images/backCard.png);
     background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 200px;
+    align-self: center;
+    align-content: center;
 }
+
 
 img {
     height: 100px;
@@ -79,25 +96,4 @@ img {
 
 .show {
     transform: rotateY(0deg);
-}
-
-
-@media (max-width: 800px) {
-    .head {
-        max-width: 100px;
-    }
-
-    .container {
-        grid-template-columns: repeat(3, auto);
-    }
-
-    .card div {
-        height: 70px;
-    }
-
-    .card {
-        width: 70px;
-        /* height: 1440px; */
-        position: relative;
-    }
 }

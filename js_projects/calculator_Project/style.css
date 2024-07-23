@@ -5,22 +5,10 @@
 }
 
 body {
-    background-color: #2828284c;
+    background-color: rgb(198, 196, 196);
 }
 
-/* 
-.bg {
-    background-image: url(./images/imgBackground.png);
-    width: auto;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
 .container {
-    /* width: 100vw; */
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,13 +37,15 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width: 340px;
     height: 40px;
     font-size: xx-large;
     color: white;
     background-color: gray;
     margin-bottom: 25px;
+    overflow: hidden;
 }
+
 
 button {
     width: 70px;

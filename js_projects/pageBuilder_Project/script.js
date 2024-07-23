@@ -1,10 +1,35 @@
+const backgroundContainer = document.querySelector('.background');
+
+//add button
 document.querySelector('#add_btn').addEventListener('click', () => {
+    const box = boxStyle();
+    backgroundContainer.appendChild(box);
+});
+
+//save button 
+document.getElementById('save_btn').addEventListener('click', () => {
+    const box = boxStyle();
+    localStorage.setItem('boxBackground', JSON.stringify(backgroundContainer.innerHTML));
+});
+
+if (localStorage.getItem('boxBackground')) {
+    const localStorageBox = JSON.parse(localStorage.getItem('boxBackground'));
+    const box = document.createElement('div');
+    box.innerHTML += localStorageBox;
+    backgroundContainer.appendChild(box);
+}
+
+
+//function box style
+const boxStyle = () => {
     const box = document.createElement('div');
 
     let sizew = document.querySelector('#sizew').value;
     let sizeh = document.querySelector('#sizeh').value;
+
     let textArea = document.querySelector('#textArea').value;
     let textColor = document.querySelector('#textColor').value;
+
     let fontSize = document.querySelector('#fontSize').value;
     let fontType = document.querySelector('#fontType').value;
 
@@ -15,8 +40,10 @@ document.querySelector('#add_btn').addEventListener('click', () => {
 
     box.style.width = sizew + "px";
     box.style.height = sizeh + "px";
+
     box.textContent = textArea;
     box.style.color = textColor;
+
     box.style.fontSize = fontSize + 'px';
     box.style.fontFamily = fontType;
 
@@ -26,14 +53,10 @@ document.querySelector('#add_btn').addEventListener('click', () => {
     box.style.borderStyle = borderStyle;
     box.style.borderColor = borderColor;
 
-    document.querySelector('.background').appendChild(box);
-});
+    return box;
+};
 
-function toggle() {
-    var move = document.getElementsByClassName("sidebar");
-    if (move.style.display === "none") {
-        move.style.display = "block";
-    } else {
-        move.style.display = "none";
-    }
-}
+document.getElementById('delete_btn').addEventListener('click', () => {
+    localStorage.clear();
+    backgroundContainer.innerHTML = '';
+});

@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-image: linear-gradient(to right, #281EFF, #2DFF8C);
+    background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
 }
 
 .title {

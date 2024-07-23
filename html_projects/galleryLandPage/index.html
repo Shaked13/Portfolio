@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery Land Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,32 +33,34 @@
 
         <div class="bluebox">
             <h1>לגלות את העולם</h1>
-            <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+            <p>לגלות את העולם הוא תהליך מרתק המאפשר להרחיב את האופקים, להכיר תרבויות חדשות וללמוד דברים חדשים.</p>
         </div>
 
-        <div class="form">
+        <form class="form">
             <div class="form-title">
                 <h1>ספרו לנו על החוויה שלכם</h1>
-                <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.</p>
+                <p>תרשמו לנו בטופס מה הטיול המרגש שלכם ולמה הוא היה כל כך מרגש. אם זה בגלל אנשים או חוויות מסוימות שגרמו
+                    לכם לזה.</p>
             </div>
 
             <div class="form-control">
                 <label for="name">שם מלא</label>
-                <input type="text" id="name">
+                <input type="text" id="name" required>
             </div>
 
             <div class="form-control">
                 <label for="email">דוא"ל</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
             </div>
 
             <div class="form-control">
                 <label for="freetext">החוויה שלכם</label>
-                <input type="text" id="freetext">
+                <input type="text" id="freetext" required>
             </div>
-
-            <input type="submit" value="שליחה">
-        </div>
+            <div class="form-control">
+                <input type="submit" value="שליחה">
+            </div>
+        </form>
     </div>
 </body>
 

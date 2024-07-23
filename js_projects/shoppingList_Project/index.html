@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js" async defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>רשימת קניות</h1>
+            <p>.כאן תוכלו להוסיף פריטים לרשימת קניות ולערוך את המוצר או האם למחוק אותו </p>
+        </div>
+        <form id="shoppingList">
+            <div class="formInfo">
+                <div class="formLabel">
+                    <Label>שם הפריט</Label>
+                    <input type="text" id="itemName" placeholder="תרשמו מוצרים לקניות">
+                </div>
+                <button id="addItem">הוספה</button>
+            </div>
+        </form>
+        <div class="separator"></div>
+
+        <ul id="itemList"></ul>
+    </div>
+</body>
+
+</html>

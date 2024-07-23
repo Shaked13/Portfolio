@@ -42,4 +42,3 @@ function deleteEl() {
 function clickBtn() {
     document.querySelector(".value").textContent += this.textContent;
 }
-

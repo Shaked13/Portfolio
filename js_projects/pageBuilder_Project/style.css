@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: gray;
     margin-bottom: 50px;
 }
 
@@ -24,12 +24,6 @@ body {
     overflow-x: auto;
     background-color: white;
     margin: 20px;
-    /* flex: 1; */
-    /* border: 1px solid #ccc; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* display: block; */
 }
 
 .sidebar {
@@ -49,13 +43,16 @@ body {
 }
 
 .sidebar button {
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     border: none;
     background-color: #e91e63;
     color: Black;
     cursor: pointer;
-    margin: 5px 0;
+    margin-top: 10px;
+    margin-right: 25px
 }
 
 .sidebar label {
@@ -76,13 +73,18 @@ select {
     height: 25px;
 }
 
+.btn-container {
+    display: flex;
+    width: 100%;
+}
+
 
 @media(max-width:800px) {
     .container {
         width: 100vw;
         height: 100vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .background {
@@ -92,33 +94,6 @@ select {
     }
 
     .sidebar {
-        background-color: red;
-        position: relative;
         flex-direction: row-reverse;
     }
-}
-
-
-/* .sidebar input,
-.sidebar textarea {
-    width: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-} */
-
-/* 
-.input-text {
-    width: 270px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-top: px;
-} */
-
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column;
-    }
-
 }

@@ -14,7 +14,6 @@
 
         <div class="background"></div>
 
-        <!-- <button onclick="toggle()">Click</button> -->
         <div class="sidebar">
             <div class="container-title">
                 <h1>בונה מסכים</h1>
@@ -33,7 +32,7 @@
 
             <div class="input-text">
                 <label for="sizew">רוחב</label>
-                <input type="text" id="sizew" placeholder="Width">
+                <input type="number" max="1200" id="sizew" placeholder="Width">
             </div>
 
             <div class="input-text">
@@ -94,10 +93,11 @@
                 <option value="outset">outset</option>
             </select>
 
-            <button id="add_btn">הוסף</button>
-
-            <!-- <button onclick="saveFunction()" id="save_btn">שמור</button> -->
-
+            <div class="btn-container">
+                <button id="add_btn">הוסף</button>
+                <button id="save_btn">שמירה</button>
+                <button id="delete_btn">מחיקה</button>
+            </div>
         </div>
     </div>
 
